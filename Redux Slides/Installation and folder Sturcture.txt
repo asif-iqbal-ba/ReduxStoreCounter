@@ -1,0 +1,15 @@
+1 - npm i redux react-redux
+
+2 -create folder in src having name Actions
+3 -Create a file in it having name index.js
+
+4 -Create folder in src having name reducers
+Note thate we can create multiple reducer here
+
+5 -create a file in it having any name
+currnetly we are giving updown.js
+
+6 -Create a file in it having name index.js
+7 -Create a file in SRC folder having 
+name store.js
+
