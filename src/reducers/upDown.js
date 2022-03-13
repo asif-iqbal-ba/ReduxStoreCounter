@@ -10,7 +10,10 @@ export const changeTheNumber = (state = initialState, action) =>{
         case "DECREMENT": {
             console.log('ok -')
             return state - 1;
-        }        
+        }
+        case "RESET":{
+            return state = initialState
+        }
         default:{ 
             console.log('go defa')
             return state;

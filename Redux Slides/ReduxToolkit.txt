@@ -1,0 +1,27 @@
+what is Redux Toolkit?
+Redux Toolkit helped to standarize the 
+way to use Redux
+
+ 2--Differences
+Redux                                 		Redux Toolkit
+*CreateStore                          		configureStore
+*Manually Create Action Creator Functions.	createAction
+*Manually cteated reducer with switch case	createReducer
+						createSlice
+						A new feature that accepts
+						an initial state and holder 
+						reducer and create action
+						creator function
+
+--------------
+Making Method
+1-npx create-react-app appName --template redux
+
+This will provide simple counter application
+
+for already created application
+2-npm install redux @reduxjs/toolkit
+
+
+miraj JS
+This is a Mockup Server

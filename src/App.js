@@ -1,7 +1,7 @@
 import React from 'react'
 import './App.css'
 import { useSelector, useDispatch } from 'react-redux'
-import { incNumber, decNumber } from './actions/index'
+import { incNumber, decNumber, reSet } from './actions/index'
 const App = () => {
   const mState = useSelector((state) => state.changeTheNumber)
   const dispatch = useDispatch()
@@ -21,11 +21,17 @@ const App = () => {
           <h4>Using React and Redux</h4>
           <div className="quantity">
             {/* <a class="quantity__minus" title="Decrement" onClick={() => dispatch(decNumber)}><span>-</span></a> */}
-            <button  onClick={() => dispatch({type:'DECREMENT'})}><span>-</span></button>
+            {/* <button  onClick={() => dispatch({type:'DECREMENT'})}><span>-</span></button> */}
+            <button  onClick={() => dispatch(decNumber())}><span>-</span></button>
             {/* <input name="quantity" type="text" class="quantity__input" value={mState} /> */}
             <h1>{mState}</h1>
             {/* <a class="quantity__plus" title="Increment" onClick={()=> dispatch(incNumber)} ><span>+</span></a> */}
-            <button className="quantity__minus" title="Decrement" onClick={() => dispatch({type:'INCREMENT'})}><span>+</span></button>
+            <button className="quantity__minus" title="Decrement" onClick={() => dispatch(incNumber())}><span>+</span></button>
+            <br>
+            </br>
+            <button onClick={()=> dispatch(reSet())}>
+              RESET
+            </button>
           </div>
         </div>
       </div>
